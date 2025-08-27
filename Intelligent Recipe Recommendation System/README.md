@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image.jpg" alt="Intelligent Recipe Recommendation System Banner" width="100%" />
+  <img src="Image.jpg" alt="Intelligent Recipe Recommendation System Banner" width="100%" />
 </p>
 
 # 🥘 Intelligent Recipe Recommendation System  
