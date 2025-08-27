@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="image.jpg" alt="BlockDot E-Commerce Website Banner" width="100%" />
+  <img src="Blockdot.png" alt="BlockDot E-Commerce Website Banner" width="100%" />
 </p>
 
 # 🛒 BlockDot E-Commerce Website 👟👕🎮  
