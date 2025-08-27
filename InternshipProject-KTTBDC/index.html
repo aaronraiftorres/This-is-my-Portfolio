@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTTBDC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+        <header>
+            <div class="header-container">
+              <!-- Header Logo-->
+              <div class="logo-container">
+                <a href="index.html">
+                  <img src="images/WVSU-Logo-updated.png" alt="KTTBDC Logo">
+                  <div class="logo-text"></div>
+                </a>
+              </div>
+          
+              <!-- Hamburger Menu Toggle -->
+              <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+          
+              <!-- Navigation Menu -->
+              <nav>
+                <ul>
+                  <li><a href="#hero">Home</a></li>
+                  <li><a href="#about-us">About</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+          
+                  <!-- Desktop Dropdown -->
+                  <li class="dropdown desktop-only">
+                    <a href="#">Explore ▼</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#component-units">Component Units</a></li>
+                      <li><a href="#our-goals">Our Goals</a></li>
+                      <li><a href="#our-objectives">Our Objectives</a></li>
+                      <li><a href="#our-services">Our Services</a></li>
+                      <li><a href="#our-team">Our Team</a></li>
+                      <li><a href="#partners">Partners & Collaborators</a></li>
+                    </ul>
+                  </li>
+          
+                  <!-- Mobile Menu -->
+                  <li class="mobile-only"><a href="#component-units">Component Units</a></li>
+                  <li class="mobile-only"><a href="#our-goals">Our Goals</a></li>
+                  <li class="mobile-only"><a href="#our-objectives">Our Objectives</a></li>
+                  <li class="mobile-only"><a href="#our-services">Our Services</a></li>
+                  <li class="mobile-only"><a href="#our-team">Our Team</a></li>
+                  <li class="mobile-only"><a href="#partners">Partners & Collaborators</a></li>
+                </ul>
+              </nav>
+            </div>
+    </header>
+    
+<!-- Hero Section -->
+<section id = "hero" class="hero">
+    <div class="hero-content">
+        <h1><span>KTTBDC</span></h1>
+        <p>Commercializing WVSU Innovations. A Support Hub for Researchers & External Partners</p>
+        <a href="#component-units" class="btn">Discover More</a> <!--link to Component Units -->
+    </div>
+    <div class="hero-image">
+        <img src="images\logo_KTTBDC.png" alt="KTTBDC Logo">
+    </div>
+</section>
+
+<!-- Component Units Section -->
+<section id="component-units" class="component-units animate-on-scroll">
+    <div class="background-container">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="content">
+        <h1>COMPONENT UNITS</h1>
+        <div class="divider"></div>
+        <div class="units-logo-container">
+            <div class="logo-card">
+                <img src="images/itso.png" alt="ITSO">
+                <button onclick="openPopup('itso-popup')">ITSO</button>
+            </div>
+            <div class="logo-card">
+                <img src="images/ktto.png" alt="KTTO">
+                <button onclick="openPopup('ktto-popup')">KTTO</button>
+            </div>
+            <div class="logo-card">
+                <img src="images/binhi.png" alt="BINHI">
+                <button onclick="openPopup('binhi-popup')">BINHI</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ITSO Pop-up -->
+<div id="itso-popup" class="popup popup-itso">
+    <h2>About Us</h2>
+    <span class="close-btn" onclick="closePopup('itso-popup')">&times;</span>
+    <div class="popup-content">
+        <!--Image Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/itso/ITSO.png" class="slide active">
+                <img src="images/itso/itso1.png" class="slide">
+                <img src="images/itso/itso2.png" class="slide">
+                <img src="images/itso/itso3.png" class="slide">
+                <img src="images/itso/itso4.png" class="slide">
+                <img src="images/itso/itso5.png" class="slide">
+                <img src="images/itso/itso6.png" class="slide">
+                <img src="images/itso/itso7.png" class="slide">
+                <img src="images/itso/itso8.png" class="slide">
+                <img src="images/itso/itso9.png" class="slide">
+                <button class="prev" onclick="prevSlide('itso-popup')">&#10094;</button>
+                <button class="next" onclick="nextSlide('itso-popup')">&#10095;</button>
+            </div>
+        </div>
+
+        <!--(Mission & Vision) -->
+        <div class="right-content">
+            <div class="itso">
+                <img src="images/IK.png" alt="Mission">
+                <span>Mission</span>
+                <p class="extra-text">To provide quality patent information and IP services to the university community; and to support innovation and research development that will impact the community and the country's social, technological, and economic development.</p>
+            </div>
+            <div class="itso">
+                <img src="images/IK2.png" alt="Vision">
+                <span>Vision</span>
+                <p class="extra-text">A thriving ecosystem at West Visayas State University (WVSU) that leads in scientific innovation and technology transfer, we empower communities through effective commercialization and contribute advancement.</p>
+            </div>
+        </div>
+        <div class="text-marquee" 
+            style="--start-position: 10%; --start-position-value: 10%; --end-position-value: -10%;">
+            <span>CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE</span>
+            <span>CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE</span>
+            <span>CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE CREATE. PROTECT. PROMOTE</span>
+          </div>
+    </div>
+</div>
+<!-- KTTO Pop-up -->
+<div id="ktto-popup" class="popup popup-ktto">
+    <h2>About Us</h2>
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup('ktto-popup')">&times;</span>
+
+
+        <!--Image Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/ktto/ktto.png" class="slide active">
+                <img src="images/ktto/ktto1.png" class="slide">
+                <img src="images/ktto/ktto2.png" class="slide">
+                <img src="images/ktto/ktto3.png" class="slide">
+                <img src="images/ktto/ktto4.png" class="slide">
+                <img src="images/ktto/ktto5.png" class="slide">
+                <img src="images/ktto/ktto6.png" class="slide">
+                <img src="images/ktto/ktto7.png" class="slide">
+                <img src="images/ktto/ktto8.png" class="slide">
+                <img src="images/ktto/ktto9.png" class="slide">
+                <button class="prev" onclick="prevSlide('ktto-popup')">&#10094;</button>
+                <button class="next" onclick="nextSlide('ktto-popup')">&#10095;</button>
+            </div>
+        </div>
+
+
+        <!-- Hover Mission & Vision -->
+        <div class="right-content">
+            <div class="ktto">
+                <img src="images/IK.png" alt="Mission">
+                <span>Mission</span>
+                <p class="extra-text">To provide quality patent information and IP services to the university community; and to support innovation and research development that will impact the community and the country's social, technological, and economic development.</p>
+            </div>
+            <div class="ktto">
+                <img src="images/IK2.png" alt="Vision">
+                <span>Vision</span>
+                <p class="extra-text">A thriving ecosystem at West Visayas State University (WVSU) that leads in scientific innovation and technology transfer, we empower communities through effective commercialization and contribute advancement.</p>
+            </div>
+         </div>
+        <div class="text-marquee" 
+            style="--start-position: 50%; --start-position-value: 50%; --end-position-value: -50%;">
+            <span>KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE</span>
+            <span>KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE</span>
+            <span>KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE KNOWLEDGE TECHNOLOGY TRANSFER OFFICE</span>
+          </div>
+    </div>
+</div>
+<!-- BINHI Pop-up -->
+<div id="binhi-popup" class="popup popup-binhi">
+    <h2>About Us</h2>
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup('binhi-popup')">&times;</span>
+       
+        <!--Image Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/binhi/Binhi.png" class="slide active">
+                <img src="images/binhi/binhi1.png" class="slide">
+                <img src="images/binhi/binhi2.png" class="slide">
+                <img src="images/binhi/binhi3.png" class="slide">
+                <img src="images/binhi/binhi4.png" class="slide">
+                <img src="images/binhi/binhi5.png" class="slide">
+                <img src="images/binhi/binhi6.png" class="slide">
+                <img src="images/binhi/binhi7.png" class="slide">
+                <img src="images/binhi/binhi8.png" class="slide">
+                <img src="images/binhi/binhi9.png" class="slide">
+                <img src="images/binhi/binhi10.png" class="slide">
+                <button class="prev" onclick="prevSlide('binhi-popup')">&#10094;</button>
+                <button class="next" onclick="nextSlide('binhi-popup')">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="right-content">
+            <div class="binhi">
+                <img src="images/B.png" alt="Mission">
+                <span>Mission</span>
+                <p class="extra-text">Empowering innovation and economic growth by inspiring and nurturing technology-based startups, fostering collaboration between academia, industry, and government, and advancing the commercialization of local technologies in the region.</p>
+            </div>
+            <div class="binhi">
+                <img src="images/B2.png" alt="Vision">
+                <span>Vision</span>
+                <p class="extra-text">Fostering a visionary ecosystem where technology-based startups flourish. Local innovations prosper, and collaboration propels regional economic growth, establishing BINHI as a respected leader in enterprising innovations.</p>
+            </div>
+        </div>
+
+<div class="text-marquee" 
+            style="--start-position: 50%; --start-position-value: 50%; --end-position-value: -50%;">
+            <span>IDEAS. COLLABORATION. ENTERPRISING. INNOVATION IDEAS. COLLABORATION. ENTERPRISING. INNOVATION IDEAS. COLLABORATION. ENTERPRISING. INNOVATION</span>
+            <span>IDEAS. COLLABORATION. ENTERPRISING. INNOVATION IDEAS. COLLABORATION. ENTERPRISING. INNOVATION IDEAS. COLLABORATION. ENTERPRISING. INNOVATION</span>
+            <span>IDEAS. COLLABORATION. ENTERPRISING. INNOVATION IDEAS. COLLABORATION. ENTERPRISING. INNOVATION IDEAS. COLLABORATION. ENTERPRISING. INNOVATION</span>
+          </div>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<section id="about-us" class="about-us animate-on-scroll">
+    <div class="about-container">
+        <div class="about-content">
+            <h3>MISSION</h3>
+            <p>
+                Dedicated to fostering a scientific, innovative, collaborative, and entrepreneurial culture at 
+                West Visayas State University (WVSU), we strive to meet the growing demand for advancing 
+                university research and development, facilitating the commercialization of emerging technologies, 
+                and enhancing their societal impact.
+            </p>
+            <h3>VISION</h3>
+            <p>
+                A thriving ecosystem at West Visayas State University (WVSU) that leads in scientific innovation 
+                and technology transfer, empowering communities through effective commercialization and 
+                sustainable development.
+            </p>
+        </div>
+        <div class="about-image">
+            <h2>ABOUT US</h2>
+            <img src="images/logo_KTTBDC.png" alt="About Us Icon">
+        </div>
+    </div>
+</section>
+
+<!-- Our Goals Section -->
+<section id="our-goals" class="our-goals animate-on-scroll">
+    <div class="section-header">
+        <h2>OUR GOALS</h2>
+    </div>
+    <div class="goals-container">
+        <div class="goal">
+            <div class="goal-content">
+                <div class="goal-box">
+                    <img src="images/Icon-goals1.png" alt="Innovation Culture">
+                </div>
+                <p>To develop and nurture a more scientific, innovative, collaborative, and entrepreneurial culture of WVSU.</p>
+            </div>
+        </div>
+        <div class="goal">
+            <div class="goal-content">
+                <div class="goal-box">
+                    <img src="images/icon-goals2.png" alt="Research & Development">
+                </div>
+                <p>Intends to progressively address the increasing demand to advance university research and development, and other potential technologies developed for the benefit of society.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Objectives Section -->
+<section id="our-objectives" class="our-objectives animate-on-scroll">
+    <h2>OUR OBJECTIVES</h2>
+    <div class="objectives-container">
+        <div class="objective">
+            <div class="icon-circle">
+                <img class="objective-icon" src="images/icon-obj.1.png" alt="Innovation Support">
+            </div>
+            <p>To harmonize the Innovation and Technology Support Office (ITSO), the BINHI Technology Business Incubator (TBI), and the Knowledge and Technology Transfer Office (KTTO).</p>
+        </div>
+
+        <div class="objective">
+            <div class="icon-circle">
+                <img class="objective-icon" src="images/icon-obj.2.png" alt="Policies and Processes">
+            </div>
+            <p>To establish policies and processes engaging technology transfer and R&D commercialization initiatives.</p>
+        </div>
+
+        <div class="objective">
+            <div class="icon-circle">
+                <img class="objective-icon" src="images/icon-obj.3.png" alt="Strategies and Protocols">
+            </div>
+            <p>To implement strategies and protocols to increase the number of commercially viable technologies.</p>
+        </div>
+
+        <div class="objective">
+            <div class="icon-circle">
+                <img class="objective-icon" src="images/icon-obj.4.png" alt="Expert Team Development">
+            </div>
+            <p>To create and develop a team of experts in the field of intellectual property management and R&D commercialization.</p>    
+        </div>
+
+        <div class="objective">
+            <div class="icon-circle">
+                <img class="objective-icon" src="images/icon-obj.5.png" alt="Academe-Industry Partnership">
+            </div>
+            <p>To build a strong academe-industry partnership especially in consulting, research, technology transfer, and commercialization.</p>
+        </div>
+
+        <div class="objective">
+            <div class="icon-circle">
+                <img class="objective-icon" src="images/icon-obj.6.png" alt="Innovation Fund">
+            </div>
+            <p>To establish and maintain an innovation fund for research and innovation.</p>    
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Services Section -->
+<section id="our-services" class="our-services animate-on-scroll">
+    <h2>OUR SERVICES</h2>
+    <div class="services-container">
+        <div class="service">
+            <div class="service-front">
+                <img src="images/services1.png" alt="IP Management">
+                <p>IP Management</p>
+            </div>
+            <div class="service-hover">
+                <p>IP Management involves protecting and managing intellectual property rights, ensuring legal compliance, and maximizing innovation potential.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-front">
+                <img src="images/services2.png" alt="Technology Transfer & Promotion">
+                <p>Technology Transfer & Promotion</p>
+            </div>
+            <div class="service-hover">
+                <p>Technology Transfer & Promotion bridges the gap between research institutions and industry by facilitating commercialization of innovative technologies.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-front">
+                <img src="images/services3.png" alt="Industry Matching & Partnership">
+                <p>Industry Matching & Partnership</p>
+            </div>
+            <div class="service-hover">
+                <p>Industry Matching & Partnership connects businesses with research institutions to foster collaboration and innovation-driven partnerships.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-front">
+                <img src="images/services4.png" alt="R&D Commercialization">
+                <p>R&D Commercialization</p>
+            </div>
+            <div class="service-hover">
+                <p>R&D Commercialization transforms research outcomes into viable products and services, benefiting industries and society.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Our Team -->
+<section id="our-team" class="our-team animate-on-scroll">
+<div class="background">
+    <div class="content">
+        <h2 class="team-heading">OUR TEAM</h2>
+        <div class="team-container">
+            <div class="team-member large">
+                <div class="image-wrapper">
+                    <div class="gradient-background"></div>
+                    <div class="image-container">
+                        <img src="images/sir.png" alt="Arnel Secondes" style="width: 100%; max-width: 500px; height: auto;">
+                    </div>
+                </div>
+                <h2>ARNEL N. SECONDES</h2>
+                <p>Director</p>
+            </div>
+            <div class="team-members-grid">
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <div class="gradient-background"></div>
+                        <div class="image-container">
+                            <img src="images/missted.png" alt="Ted Hyacinth Aspera">
+                        </div>
+                    </div>
+                    <h2>TED HYACINTH T. ASPERA</h2>
+                    <p>General Manager</p>
+                </div>
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <div class="gradient-background"></div>
+                        <div class="image-container">
+                            <img src="images/Ms_Joe.png" alt="Maria Joeanne Gison">
+                        </div>
+                    </div>
+                    <h2>MARIA JOEANNE A. GISON</h2>
+                    <p>UMWAD-BINHI Staff</p>
+                </div>
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <div class="gradient-background"></div>
+                        <div class="image-container">
+                            <img src="images/Ms._Alexa.png" alt="Alexa Mae Borda">
+                        </div>
+                    </div>
+                    <h2>ALEXA MAE M. BORDA</h2>
+                    <p>BINHI Staff</p>
+                </div>
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <div class="gradient-background"></div>
+                        <div class="image-container">
+                            <img src="images/Ms._Aza.png" alt="Azaleah Articulo">
+                        </div>
+                    </div>
+                    <h2>AZALEAH G. ARTICULO</h2>
+                    <p>KTTBDC Staff</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-image"></div>
+</div>
+</section>
+
+<!-- Partners & Collaborators Section -->
+<section id="partners" class="partners-section">
+    <h2>PARTNERS & COLLABORATORS</h2>
+    <div class="carousel-container">
+        <div class="partners-carousel">
+            <div class="partner"><img src="images/wvsu.png" alt="Partner 1"></div>
+            <div class="partner"><img src="images/CHED.png" alt="Partner 2"></div>
+            <div class="partner"><img src="images/TESDA.png" alt="Partner 3"></div>
+            <div class="partner"><img src="images/DICT.png" alt="Partner 4"></div>
+            <div class="partner"><img src="images/DOST.png" alt="Partner 5"></div>
+            <div class="partner"><img src="images/DTI.png" alt="Partner 6"></div>
+            <div class="partner"><img src="images/IBC.png" alt="Partner 7"></div>
+            <div class="partner"><img src="images/II.png" alt="Partner 8"></div>
+            <div class="partner"><img src="images/PCCI.png" alt="Partner 9"></div>
+            <div class="partner"><img src="images/PIOS.png" alt="Partner 10"></div>
+            <div class="partner"><img src="images/CIP.png" alt="Partner 11"></div>
+            <div class="partner"><img src="images/LEDIP.png" alt="Partner 12"></div>
+            <div class="partner"><img src="images/Umwad.png" alt="Partner 13"></div>
+            <div class="partner"><img src="images/GSC.png" alt="Partner 14"></div>
+            <div class="partner"><img src="images/SFCI.png" alt="Partner 15"></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Your message here" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                
+                <div class="button-container">
+                    <button type="submit" id="submitBtn">Submit</button>
+                </div>
+                
+                <div class="success-message" id="successMessage" style="display: none;">
+                    Message Sent Successfully!
+                </div>
+            </form>
+        </div>
+
+        <div class="map-container">
+                <div class="text-container">
+                    <h2>Get in Touch</h2>
+                    <p>Reach out for inquiries or partnership opportunities.</p>
+                    <hr>
+                </div>
+                <iframe 
+                    src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.2832184917306!2d122.55641393183802!3d10.71262464451722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee515c3b33693%3A0x88c79dab1c0b82e1!2sMagsaysay%20Village%2C%20La%20Paz%2C%20Iloilo%20City%2C%20Iloilo!5e0!3m2!1sen!2sph!4v1748311354322!5m2!1sen!2sph"
+                    width="100%"
+                    height="400"
+                    style="border:0; border-radius: 10px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-branding">
+            <img src="images/KTTBDC_Logo.png" alt="KTTBDC Logo" class="footer-logo"> 
+            <div class="footer-text">
+                <div class="title">KTTBDC</div>
+                <div class="subtitle">Knowledge Technology Transfer & Business Development Center</div>
+            </div>
+        </div>
+        <div class="links">
+            <a href="#hero">Home</a>
+            <a href="#about-us">About Us</a>
+        </div>
+        <div class="links">
+            <a href="#our-services">Services</a>
+            <a href="#component-units">Component Units</a>
+        </div>
+        <div class="links">
+            <a href="#our-goals">Goals</a>
+            <a href="#our-objectives">Objectives</a>
+        </div>
+        <div class="links">
+            <a href="#partners">Partners and Collaborators</a>
+            <a href="#our-team">Meet Our Team</a>
+        </div>
+        <div class="links">
+            <a href="#container">Contact Us</a>
+        </div>
+    </div>
+    <div class="social-icons">
+        <!-- Link to Facebook page -->
+        <a href="https://facebook.com/wvsu.kttbdc" target="_blank">
+            <img src="images/fb.png" alt="Facebook">
+        </a>
+    
+        <!-- Link to Gmail -->
+        <a href="mailto:kttbdc@wvsu.edu.ph">
+            <img src="images/mail.png" alt="Gmail">
+        </a>
+    
+        <!-- Link to phone number -->
+        <a href="tel:+639988860994">
+            <img src="images/contact.png" alt="Phone">
+        </a>
+    </div>
+    <div class="copyright">Copyright. All Rights Reserved 2025.</div>
+</footer>
+
+</body>
+</html>
