@@ -1,0 +1,868 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,86,71,0.7),rgba(0,0,0.7)),url(images/gtr.jpeg);
+    background-position: center;
+    background-size: cover;
+   
+    
+}
+
+nav{
+    display:flex;
+    padding: 2% 6%'
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+    height: 180px;
+    
+    
+}
+
+.nav-links{
+    flex: 1;
+   
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 70px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 13px
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #E3E7E8;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+.title-box{
+    width: 90%;
+    color:indianred;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title-box h1{
+    font-size:184px;
+}
+.title-box h2{
+    font-size: 23px;
+    color: silver;
+}
+.title-box p{
+    margin: 10px 0 40px;
+    font-size: 13px;
+    color: silver;
+}
+
+.head-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: indianred;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.head-btn:hover{
+    border: 1px solid #C91651;
+    background: #FCFCFC;
+    transition: 1s;
+}
+
+
+nav .fa{
+    display: none;
+    
+}
+@media(max-width: 700px){
+    .title-box h1{
+        font-size:92px;
+        
+    }
+  
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:  #D53604;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size:22px;
+        cursor: pointer;   
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*----------- offer -----*/
+.Offer{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Offer h1{
+    font-size: 74px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.Offer h3{
+       font-size: 29px;
+    color: indianred;
+    font-weight: 400;
+    font-style: initial;
+}
+.Offer p{
+    color: dimgray;
+    font-size: 16px
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------------- vehicles ------------------*/
+.vehicles{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.vehicles h1{
+      font-size: 54px;
+    color: indianred;
+    font-weight: 600;
+    text-align: left;    
+}
+.vehicles p{
+    text-align: left;
+    font-weight: 300;
+    
+}
+.vehicles-types{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;    
+}
+.vehicles-types img{
+    width: 500px;
+   
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(40,0,0,0.7);
+}
+
+.vehicles-types h3{
+    width: 100%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.vehicles-types:hover h3{
+    bottom: 41%;
+    opacity: 1;
+    
+}
+
+/*--------------------- services ------------------*/
+
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;    
+
+}
+.services h1{
+    font-size: 64px;
+    color: indianred;
+    font-weight: 600;
+}
+.services-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left ;     
+}
+
+.services-col img{
+    width:100%;
+    border-radius: 10px;
+}
+.services-col p{
+    padding: 0;
+}
+
+/*--------------------- accessories ------------------*/
+
+.accessories{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.accessories h1{
+      font-size: 54px;
+    color: indianred;
+    font-weight: 600;
+    text-align: center;    
+}
+.accessories p{
+    color: dimgray;
+    font-size: 16px
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.acce-col{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden; 
+}
+.acce-col img{
+    width: 150%;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(20,0,0,0.7);
+}
+
+.acce-col h3{
+    width: 100%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.acce-col:hover h3{
+    bottom: 21%;
+    opacity: 1;
+}
+/*----------- Motto -----*/
+.motto{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.motto h1{
+    word-spacing: 2.5px;
+    font-size: 54px;
+    color: black; 
+}
+
+.motto p{
+    font-size: 23px;
+    color: indianred;
+}
+/*--------------------- footer ------------------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.footer h4{
+    font-size: 30px;
+    color:black;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+       margin: 10px 0 40px;
+    font-size: 13px;
+    color: silver;
+}
+.icons{
+    flex-basis: 150%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+        padding-bottom: 80px 
+    overflow: hidden;
+    
+    
+}
+.icons img{
+
+
+    width: 3%;
+   
+}
+/*--------- vehicles us page -------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,86,71,0.7),rgba(0,0,0.7)),url(images/gtr.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: indianred;
+    
+}
+.sub-header h1{
+    margin-top: 100px;
+    font-size: 84px;
+}
+
+/*--------- vehicles content -------*/
+
+.v-content1{
+    width: 80%;
+    margin: auto;
+    
+    padding-top: 60px;
+    padding-bottom: 50px;
+    
+}
+.v-col{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+.v-col img{
+    width: 110%;
+}
+.v-col h1{
+    padding-top: 0;
+    font-size: 42px;
+    color: indianred
+}
+.v-col p{
+    padding: 5px 0 25px;
+    color: black;
+}
+
+/*--------- Luxury Cars-------*/
+.lux-cars{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.lux-cars h1{
+      font-size: 64px;
+    color: indianred;
+    font-weight: 600;
+    text-align: center;    
+}
+.lux-cars p{
+    text-align: left;
+    font-weight: 300;
+    
+}
+.lux-types{
+    flex-basis: 35&;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position:relative;
+    overflow: hidden; 
+ 
+    padding:40px 6px;
+    
+  
+}
+.lux-types img{
+    width: 100%;
+   height: 400px;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(50,0,0,0.7);
+}
+
+.lux-types h3{
+    width: 90%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.lux-types:hover h3{
+    bottom: 41%;
+    opacity: 1;
+    
+}
+/*--------- Sports Cars-------*/
+.sport-cars{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.sport-cars h1{
+      font-size: 64px;
+    color: indianred;
+    font-weight: 600;
+    text-align: center;    
+}
+.sport-cars p{
+    text-align: left;
+    font-weight: 300;
+    
+}
+.sport-types{
+    flex-basis: 35&;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position:relative;
+    overflow: hidden; 
+    padding:40px 6px;
+    
+}
+.sport-types img{
+    width: 100%;
+    height: 400px;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(50,0,0,0.7);
+}
+
+.sport-types h3{
+    width: 90%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.sport-types:hover h3{
+    bottom: 41%;
+    opacity: 1;
+    
+}
+/*--------- Off-road Cars-------*/
+.off-cars{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.off-cars h1{
+      font-size: 64px;
+    color: indianred;
+    font-weight: 600;
+    text-align: center;    
+}
+.off-cars p{
+    text-align: left;
+    font-weight: 300;
+    
+}
+.off-types{
+    flex-basis: 35&;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position:relative;
+    overflow: hidden; 
+    padding:40px 6px;
+    
+}
+.off-types img{
+    width: 100%;
+    height: 400px;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(50,0,0,0.7);
+}
+
+.off-types h3{
+    width: 90%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.off-types:hover h3{
+    bottom: 41%;
+    opacity: 1;
+    
+}
+
+/*--------- services content-------*/
+.ser-content{
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.ser-content img{
+    width: 400%;
+    height: 600px;  
+}
+
+.v-content1{
+    width: 80%;
+    margin: auto;
+    
+    padding-top: 60px;
+    padding-bottom: 50px;
+    
+}
+/*------------- services mech -----------*/
+.m-col{
+    flex-basis: 48%;
+    padding:30px 50px;
+}
+.m-col img{
+    width: 100%;
+}
+.m-col h1{
+    padding-top: 50px;
+    font-size: 42px;
+    color: indianred
+}
+.m-col p{
+    padding: 5px 0 25px;
+    color: black;
+}
+
+/*------------- services repair specialist-----------*/
+.r-col{
+    flex-basis: 48%;
+    padding:30px 50px;
+}
+.r-col img{
+    width: 900px;
+    height: 600px;
+}
+.r-col h1{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 42px;
+    color: indianred
+}
+.r-colp{
+    padding: 5px 0 25px;
+    color: black;
+}
+
+
+/*------------- accessories content -----------*/
+.off-cars{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.off-cars h1{
+      font-size: 64px;
+    color: indianred;
+    font-weight: 600;
+    text-align: center;    
+}
+.off-cars p{
+    text-align: left;
+    font-weight: 300;
+    
+}
+.off-types{
+    flex-basis: 35&;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position:relative;
+    overflow: hidden; 
+    padding:40px 13px;
+    
+}
+.off-types img{
+    width: 100%;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(50,0,0,0.7);
+}
+
+.off-types h3{
+    width: 90%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.off-types:hover h3{
+    bottom: 41%;
+    opacity: 1;
+    
+}
+/*------------- accessories parts content-----------*/
+.parts-cars{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.parts-types{
+    flex-basis: 35&;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position:relative;
+    overflow: hidden; 
+    padding:40px 3px;
+    
+}
+.parts-types img{
+    width: 100%;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(50,0,0,0.7);
+}
+
+.parts-types h3{
+    width: 90%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.parts-types:hover h3{
+    bottom: 41%;
+    opacity: 1;
+    
+}
+/*------------- brands parts content-----------*/
+.brands-cars{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.brands-types{
+    flex-basis: 35&;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position:relative;
+    overflow: hidden; 
+    padding:40px 3px;
+    
+}
+.brands-types img{
+    width: 600px;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(50,0,0,0.7);
+}
+
+.brands-types h3{
+    width: 90%;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;  
+    transition: 0.5s;
+    opacity: 0;
+}
+.brands-types:hover h3{
+    bottom: 41%;
+    opacity: 1;
+}
+
+/*------------- contacts content -----------*/
+.contact-content{
+    padding-left: 80px;
+    padding-right: 100px;
+    
+    text-align: center;
+    padding-top: 50px;
+}
+.contact-col{
+text-align: center;
+    
+
+}
+
+.contact-content h1{
+    color: indianred;
+    font-size: 94px;
+    text-align: center;
+}
+
+.contact-col p{
+    color: silver;
+    font-size: 19px;
+    text-align: center;
+}
+.contact-col ul li a{
+    text-align: center;
+    position: relative;
+    padding: 10px 50px;
+    padding-left: 790px;
+    color: indianred;
+    font-size: 20px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.contact-content h3{
+        color: black;
+    font-size: 25px;
+    text-align: center;
+    
+}
