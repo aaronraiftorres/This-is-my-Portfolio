@@ -1,4 +1,4 @@
-# 🌟 My Portfolio Repository 🚀  
+  # 🌟 MY PORTFOLIO 🚀  
 
 Welcome to my **Portfolio Repository**! 🎨💻  
 This is where I showcase **all of my projects** — from college works 🎓, practice projects 🧩, to those I created after graduation 🎉.  
