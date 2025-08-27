@@ -1,4 +1,8 @@
-  # 🌟 MY PORTFOLIO 🚀  
+<p align="center">
+  <img src="image.jpg" alt="Portfolio Banner" width="100%" />
+</p>
+
+# 🌟 My Portfolio Repository 🚀  
 
 Welcome to my **Portfolio Repository**! 🎨💻  
 This is where I showcase **all of my projects** — from college works 🎓, practice projects 🧩, to those I created after graduation 🎉.  
